@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Navigator</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
+    <link rel="stylesheet" href="FE2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Campus Navigator</h1>
+        <label for="initial-location">START:</label>
+        <select id="initial-location">
+          <option value="">Select start location</option>
+          <option value="PsitTower">PSIT Tower</option>
+          <option value="TownHall">Town Hall</option>
+          <option value="GBlock">G Block</option>
+          <option value="EBlock">E Block</option>
+          <option value="FBlock">F Block</option>
+          <option value="DBlock">D Block</option>
+          <option value="ABlock">A Block</option>
+          <option value="CBlock">C Block</option>
+          <option value="BBlock">B Block</option>
+          <option value="SBlock">S Block</option>
+          <option value="RBlock">R Block</option>
+          <option value="QBlock">Q Block</option>
+          <option value="PBlock">P Block</option>
+          <option value="NBlock">N Block</option>
+          <option value="MBlock">M Block</option>
+          <option value="LBlock">L Block</option>
+          <option value="KBlock">K Block</option>
+          <option value="JBlock">J Block</option>
+          <option value="RangManch">Rang Manch</option>
+        </select>
+
+        <label for="destination-location">END:</label>
+        <select id="destination-location">
+          <option value="">Select end location</option>
+          <option value="PsitTower">PSIT Tower</option>
+          <option value="TownHall">Town Hall</option>
+          <option value="GBlock">G Block</option>
+          <option value="EBlock">E Block</option>
+          <option value="FBlock">F Block</option>
+          <option value="DBlock">D Block</option>
+          <option value="ABlock">A Block</option>
+          <option value="CBlock">C Block</option>
+          <option value="BBlock">B Block</option>
+          <option value="SBlock">S Block</option>
+          <option value="RBlock">R Block</option>
+          <option value="QBlock">Q Block</option>
+          <option value="PBlock">P Block</option>
+          <option value="NBlock">N Block</option>
+          <option value="MBlock">M Block</option>
+          <option value="LBlock">L Block</option>
+          <option value="KBlock">K Block</option>
+          <option value="JBlock">J Block</option>
+          <option value="RangManch">Rang Manch</option>
+        </select>
+
+        <button onclick="findPath()">Find Path</button>
+      </div>
+    </div>
+
+    <div class="container map-container">
+      <div id="map"></div>
+    </div>
+
+    <script src="FE3.js"></script>
+  </body>
+</html>
